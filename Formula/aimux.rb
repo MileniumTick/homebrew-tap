@@ -5,21 +5,21 @@
 class Aimux < Formula
   desc "AI Provider Multiplexer for dev CLIs"
   homepage "https://github.com/MileniumTick/aimux"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MileniumTick/aimux/releases/download/v0.5.0/aimux_0.5.0_darwin_amd64.tar.gz"
-      sha256 "d91574d58cb4bb539753c65b42a042f2598ccbbf5cd941c5711a1144c32e0a69"
+      url "https://github.com/MileniumTick/aimux/releases/download/v0.6.0/aimux_0.6.0_darwin_amd64.tar.gz"
+      sha256 "502a588d1190043e2c8a0a0b39c4837230d7e6a962569d5c5d260fca30f8a24c"
 
       define_method(:install) do
         bin.install "aimux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MileniumTick/aimux/releases/download/v0.5.0/aimux_0.5.0_darwin_arm64.tar.gz"
-      sha256 "865d9e338ce0fcc0cf83c973ab1e332af387b39a47cfe447856574ad97c8e6a4"
+      url "https://github.com/MileniumTick/aimux/releases/download/v0.6.0/aimux_0.6.0_darwin_arm64.tar.gz"
+      sha256 "6be44f43311d6c967d128280b0d3ae5a811c3038be745d274f6a13a8330bdbb8"
 
       define_method(:install) do
         bin.install "aimux"
@@ -29,15 +29,15 @@ class Aimux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MileniumTick/aimux/releases/download/v0.5.0/aimux_0.5.0_linux_amd64.tar.gz"
-      sha256 "257463a9ca9b7f6b8986e5ceea0cc7167cccb0e045d11f082c8567773a757746"
+      url "https://github.com/MileniumTick/aimux/releases/download/v0.6.0/aimux_0.6.0_linux_amd64.tar.gz"
+      sha256 "71c4cb0b6f695e5f43599f4889230c1055c17639662f15178c7309cca85e1f21"
       define_method(:install) do
         bin.install "aimux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MileniumTick/aimux/releases/download/v0.5.0/aimux_0.5.0_linux_arm64.tar.gz"
-      sha256 "1db856e8a018cd0bad66e01952599942731f67092e5c0e0537233b98883fb282"
+      url "https://github.com/MileniumTick/aimux/releases/download/v0.6.0/aimux_0.6.0_linux_arm64.tar.gz"
+      sha256 "78cfab4a753aada86fa4d058a56f432f2cb1af0989e85f25ed8b9d9773ce5097"
       define_method(:install) do
         bin.install "aimux"
       end
